@@ -3,6 +3,7 @@ This repo contains a set of JavaScript projects you can work on to improve your 
 
 ## Calculator
 1) Claymorphic Calculator
+2) Swipeable Light & Dark Theme Calculator
 
 ## Login Forms
 1) Sign in form 1
