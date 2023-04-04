@@ -1,0 +1,116 @@
+:root {
+    --color1: rgba(158, 42, 246, 0.852);
+    --color2: rgba(113, 27, 27, 0.264);
+    --box-shadow: #000;
+    --toggler-color: #fff;
+    --toggler-active: #333;
+}
+
+/*Target all tags with the "*" operator*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: 0;
+    transition: all 0.5s ease;
+}
+
+/*Style the body tag*/
+body {
+    font-family: Poppins;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+body {
+    background-image: linear-gradient(360deg, var(--color1), var(--color2));
+}
+/*Styling the container class*/
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+}
+/*Styles the calculator class*/
+.calculator {
+    position: relative;
+    height: auto;
+    width: auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 30px var(--box-shadow);
+}
+/*Styles the theme toggler*/
+.theme-toggler {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    color: var(--toggler-color);
+    z-index: 1;
+    cursor: pointer;
+}
+/*Styles the toggle when active*/
+.theme-toggler.active {
+    color: var(--toggler-active);
+}
+/*pseudo element before the toggler*/
+.theme-toggler.active::before {
+    background-color: #fff;
+}
+
+/*pseudo element before the */
+.theme-toggler::before {
+    content: '';
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50px;
+    background-color: #333;
+    z-index: -1;
+}
+
+/*Styles the display*/
+#display {
+    margin: 0 10px;
+    height: 150px;
+    width: auto;
+    max-width: 270px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    font-size: 30px;
+    margin-bottom: 20px;
+    overflow-x: scroll;
+}
+
+/*Targets the scroll bar*/
+#display::-webkit-scrollbar {
+    display: block;
+    height: 3px;
+}
+/*Styles the size of buttons*/
+button {
+    height: 60px;
+    width: 60px;
+    border: 0;
+    border-radius: 30px;
+    margin: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all .2s ease;
+}
+/*Sets the action on hover over the button*/
+button:hover {
+    transform: scale(1.15);
+}
+/*Styles the = button*/
+button#equal {
+    height: 130px;
+}
