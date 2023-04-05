@@ -4,6 +4,30 @@
     --box-shadow: #000;
     --toggler-color: #fff;
     --toggler-active: #333;
+
+    /*----Light theme colors----*/
+    --light-theme: #fff;
+    --display-color-light: #0a1e23;
+    --background-color-clear-light: #ffd5d8;
+    --color-clear-light: #fc4552;
+    --background-color-number-light: #c3eaff;
+    --color-number-light: #000;
+    --background-color-operator-light: #ffd0fd;
+    --color-operator-light: #f967f3;
+    --background-color-equal-light: #adf9e7;
+    --color-equal-light: #000;
+
+    /*-----Dark theme colors-----*/
+    --dark-theme: #071115;
+    --display-color-dark: #f8fafd;
+    --background-color-clear-dark: #2d191e;
+    --color-clear-dark: #bd3740;
+    --background-color-number-dark: #1b2f38;
+    --color-number-dark: #f8fafb;
+    --background-color-operator-dark: #2e1f39;
+    --color-operator-dark: #aa00a4;
+    --background-color-equal-dark: #223323;
+    --color-equal-dark: #fff;
 }
 
 /*Target all tags with the "*" operator*/
@@ -18,7 +42,6 @@
 /*Style the body tag*/
 body {
     font-family: Poppins;
-    overflow: hidden;
 }
 
 a {
@@ -108,9 +131,72 @@ button {
 }
 /*Sets the action on hover over the button*/
 button:hover {
-    transform: scale(1.15);
+    transform: scale(1.1);
 }
 /*Styles the = button*/
 button#equal {
     height: 130px;
+}
+
+/* ------Light Theme-------*/
+
+/*Styles the background color of the calculator to
+white */
+.calculator {
+    background-color: var(--light-theme);
+}
+/*Styles the color of display*/
+.calculator #display {
+    color: var(--display-color-light);
+}
+/*Styles the clear button*/
+.calculator button#clear {
+    background-color: var(--background-color-clear-light);
+    color: var(--color-clear-light);
+}
+/*Styles the button number*/
+.calculator button.btn-number {
+    background-color: var(--background-color-number-light);
+    color: var(--color-number-light);
+}
+/*Styles the operator buttons*/
+.calculator button.btn-operator {
+    background-color: var(--background-color-operator-light);
+    color: var(--color-operator-light);
+}
+/*Styles the equal button*/
+.calculator button.btn-equal {
+    background-color: var(--background-color-equal-light);
+    color: var(--color-equal-light);
+}
+
+/*------- Dark Theme ---------*/
+
+/*Styles the background of calculator*/
+.calculator.dark {
+    background-color: var(--dark-theme);
+}
+/*Styles the color of display*/
+.calculator.dark #display {
+    color: var(--display-color-dark);
+}
+/*Styles the clear button*/
+.calculator.dark button#clear {
+    background-color: var(--background-color-clear-dark);
+    color: var(--color-clear-dark);
+}
+/*styles the button number*/
+.calculator.dark button.btn-number {
+    background-color: var(--background-color-number-dark);
+    color: var(--color-number-dark);
+}
+/*Styles the opeator buttons*/
+.calculator.dark button.btn-operator {
+    background-color: var(--background-color-operator-dark);
+    color: var(--color-operator-dark);
+}
+/*styles the equal button*/
+.calculator.dark button.btn-equal {
+    background-color: var(--background-color-equal-dark);
+    color: var(--color-equal-dark);
 }
