@@ -7,3 +7,4 @@ This repo contains a set of JavaScript projects you can work on to improve your 
 ## 3) Age Calculator
 ## 4) Card Shoe
 ## 5) Service Card
+## 6) Glassmorphic Credit Card
