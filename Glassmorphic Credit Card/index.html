@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glassmorphic Credit Card Form</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- Start of card -->
+    <div class="card">
+        <form>
+            <h1>Enter Payment Information</h1>
+        </form>
+        <!-- Start of first row -->
+        <div class="card-row">
+            <div class="card-col">
+                <label for="cardNumber" class="card-label">Card Number</label>
+                <input type="text" class="card-input card-input--large" id="cardNumber"
+                placeholder="xxxx-xxxx-xxxx-xxxx">
+            </div>
+            <div class="card-col card-chip">
+                <img src="./images/chip.svg" alt="chip">
+            </div>
+        </div>
+        <!-- End of first row -->
+
+        <!-- Start of second row -->
+        <div class="card-row">
+            <div class="card-col">
+                <label for="cardExpiry" class="card-label">Expiry Date</label>
+                <input type="text" class="card-input" id="cardExpiry"
+                placeholder="xx-xx">
+            </div>
+            <div class="card-col">
+                <label for="cardCcv" class="card-label">CCV</label>
+                <input type="text" class="card-input" id="cardCcv"
+                placeholder="xxx">
+            </div>
+            <div class="card-col card-brand">
+                <i id="cardBrand"></i>
+            </div>
+        </div>
+        <!-- End of second row -->
+    </div>
+<!-- End of card -->
+</body>
+</html>

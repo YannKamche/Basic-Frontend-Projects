@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* root properties */
+:root {
+    --background-color: rgb(0, 90, 128) ;
+    --background-image: url('../images/5169603.jpg');
+    --card-background-color1: rgba(255, 255, 255, 0.2);
+    --card-background-color2: rgba(255, 255, 255, 0.05);
+    --card-box-shadow: rgba(0, 0, 0, 0.5); 
+    --color-title: #1d005f;               
+}
+/* Basic presets */
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Style the body */
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--background-color) var(--background-image) center/cover;
+    overflow: hidden;
+}
+
+/* Style the card */
+.card {
+    background: linear-gradient(
+        to bottom right,
+        var(--card-background-color1),
+        var(--card-background-color2)
+    );
+    box-shadow: 0 1rem 2rem var(--card-box-shadow),
+    -1px -1px 2px #aaa,
+    1px 1px 2px #555 ;
+    backdrop-filter: blur(0.8rem);
+    padding: 1.5rem;
+    border-radius: 1rem;
+}
+
+/* Style the card row */
+.card-row {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 2rem;
+}
+
+/* Style the card title */ 
+.card-title {
+    font-weight: 600;
+    font-size: 2.5rem;
+    color: var(--color-title);
+    margin: 1rem 0 1.5rem;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Styles the card-column container */
+.card-col {
+    padding-right: 2rem;
+
+}
+/* Styles the input tag */
+.card-input {
+    background: none;
+    border: none;
+    border-bottom: dashed 0.2rem rgba(0, 0, 0, 0.15);
+    font-size: 1.2rem;
+    color: #fff;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);   
+}
+/* Style the large input */
+.card-input-large {
+    font-size: 2rem;
+}
+
+/* sets the action on upon focus on the input*/
+.card-input:focus {
+    outline: none;
+    border-color: rgba(255, 255, 255, 0.6);
+} 
+/* Styles the placeholder value */
+.card-input::placeholder {
+    color: rgba(0, 0, 0, 0.5);
+    text-shadow: none;
+}
+/* Styles the labels */
+.card-label {
+    display: block;
+    color: #fff;
+    font-weight: 400;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.7);
+}
+/* Style the card-chip alignment */
+.card-chip {
+    align-self: end;
+}
+.card-chip img {
+    width: 3rem;
+}
