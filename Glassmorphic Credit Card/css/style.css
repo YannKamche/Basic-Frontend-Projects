@@ -40,6 +40,8 @@ body {
     backdrop-filter: blur(0.8rem);
     padding: 1.5rem;
     border-radius: 1rem;
+    animation: 2s cardEnter ;
+    
 }
 
 /* Style the card row */
@@ -100,4 +102,18 @@ body {
 }
 .card-chip img {
     width: 3rem;
+}
+
+/* Animation */
+@keyframes cardEnter {
+    from {
+        /* Bottom of the browser window */
+        transform:translate(100vh);
+        opacity: 0.1;
+    }
+    to {
+        /* Initial position*/
+        transform: translate(0);
+        opacity: 1;
+    }
 }

@@ -11,13 +11,13 @@
     <!-- Start of card -->
     <div class="card">
         <form>
-            <h1>Enter Payment Information</h1>
+            <h1 class="card-title">Enter Payment Information</h1>
         </form>
         <!-- Start of first row -->
         <div class="card-row">
             <div class="card-col">
                 <label for="cardNumber" class="card-label">Card Number</label>
-                <input type="text" class="card-input card-input--large" id="cardNumber"
+                <input type="text" class="card-input card-input-large" id="cardNumber"
                 placeholder="xxxx-xxxx-xxxx-xxxx">
             </div>
             <div class="card-col card-chip">
@@ -45,5 +45,9 @@
         <!-- End of second row -->
     </div>
 <!-- End of card -->
+<!-- Cleave js formats the input  -->
+<script src="https://cdn.jsdelivr.net/npm/cleave.js@1.6.0/dist/cleave.min.js"></script>
+<!-- Link to our custom js file -->
+<script src="./js/script.js"></script>
 </body>
 </html>
