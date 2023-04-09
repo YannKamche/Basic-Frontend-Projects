@@ -40,7 +40,7 @@ body {
     backdrop-filter: blur(0.8rem);
     padding: 1.5rem;
     border-radius: 1rem;
-    animation: 2s cardEnter;
+    animation: 1s cardEnter;
     
 }
 
