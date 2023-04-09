@@ -40,7 +40,7 @@ body {
     backdrop-filter: blur(0.8rem);
     padding: 1.5rem;
     border-radius: 1rem;
-    animation: 2s cardEnter ;
+    animation: 2s cardEnter;
     
 }
 
@@ -100,8 +100,18 @@ body {
 .card-chip {
     align-self: end;
 }
+/*Styles the chip image*/
 .card-chip img {
     width: 3rem;
+}
+/*Styles*/
+.card-brand {
+    font-size: 3rem;
+    color: #fff;
+    min-width: 100px;
+    min-height: 75px;
+    text-align: right;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
 }
 
 /* Animation */
