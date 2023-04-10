@@ -1,3 +1,4 @@
+// Makes use of cleave.js 
 const cleaveCC = new Cleave("#cardNumber", {
     creditCard: true,
     delimiter: "-",
