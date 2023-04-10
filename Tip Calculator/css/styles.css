@@ -1,0 +1,157 @@
+:root {
+    --background-color: hsl(185, 41%, 84%); 
+    --calculator-background-color: #fff;
+    --label-color: hsl(186, 14%, 43%);
+    --input-background-color: hsl(189, 41%, 97%);
+    --input-color: hsl(183, 100%, 15%);
+    --tip-background-color: hsl(183, 100%, 15%);
+    --color-active-tip: hsl(183, 100%, 15%);
+    --background-color-active-tip: hsl(172, 67%, 45%);
+    --background-color-result: hsl(183, 100%, 15%);
+    --color-person: hsl(184, 14%, 56%);
+    --color-amount: hsl(172, 67%, 45%);
+    --color-reset: hsl(183, 100%, 15%);
+    --background-color-reset: hsl(172, 67%, 45%);
+}
+/* Basic presets */
+* {
+    margin: 0;
+    padding: 0;
+}
+/* Styles the body */
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: var(--background-color);
+    font-family: 'Poppins', monospace;
+}
+/* Styles the logo */
+.logo {
+    text-align: center;
+    margin-top: 1.7rem;
+    margin-bottom: 2.3rem;
+}
+/* Styles the container calculator */
+.tip-calculator {
+    background-color: var(--calculator-background-color);
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    border-radius: 1.4rem 1.4rem 0 0;
+}
+/* Styles Label */
+label {
+    color: var(--label-color);
+    font-family: 700;
+    margin-bottom: 0.3rem;
+}
+
+/* Styles the input tag */
+input {
+    border: non;
+    outline: none; 
+    padding: 5px;
+    padding-right: 18px;
+    background-position: 17px 15px;
+    background-repeat: no-repeat;
+    background-color: var(--input-background-color);
+    text-align: right;
+    font-size: 24px;
+    color: var(--input-color);
+    font-weight: bold;
+    font-family: monospace;
+}
+
+/* Styles the bill input */
+.bill-input {
+    background-image: ;
+    margin-bottom: 36px;
+}
+/* Styles tip container*/
+.tip {
+    margin-top: 0.7rem;
+    display: grid;
+    grid-template-columns: 144px 144px;
+    row-gap: 2em;
+    column-gap: 18px;
+    margin-bottom: 2rem;
+}
+
+/* Styles a tip */
+.tips {
+    background-color: var(--tip-background-color);
+    color: #fff;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+/* Active tip */
+.active-tip {
+    color: var(--color-active-tip);
+    background-color: var(--background-color-active-tip);
+    font-weight: bolder;
+}
+/* Sets an image to the number of people input */
+.people-input {
+    background-image: ;
+    margin-bottom: 2.4rem;
+}
+
+/* Styles the result container */
+.result {
+    background-color: var(--background-color-result);
+    color: white;
+    padding: 39px 21px;
+    border-radius: 12px;
+}
+
+/* Styles tip-amount and total container*/
+.tip-amount, .total {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;   
+    margin-bottom: 1.7rem;
+}
+
+/* Styles the person text */
+.person {
+    font-size: 12px;
+    color: var(--color-person);
+    font-weight: 700;
+}
+/* Styles the amount */
+.amount {
+    font-size: 28px;
+    color: var(--color-amount);
+    font-weight: 700;
+}
+/* Styles the reset */
+.reset {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--color-reset);
+    background-color: var(--background-color-reset);
+    padding: 9px 0 9px 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* Styles the tip tag */
+#tip-custom input {
+    box-sizing: border-box;
+    width: 100%;
+}
+/* Styles the people label */
+.peopleLabel {
+    display: flex;
+    justify-content: space-between;
+}
+/* styles the erro */
+.error {
+    color: red;
+    display: none;
+}

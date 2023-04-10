@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator App</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link rel="stylesheet" 
+    href="https:://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" />
+</head>
+<body>
+    <!-- Logo div -->
+    <div class="logo">
+        <img src="" alt="">
+    </div>
+
+    <!-- start of tip calculator -->
+    <div class="tip-calculator">
+        <div class="partOne">
+            <label for="">Bill</label>
+            <input type="number" class="input bill-input" id="bill-input">
+
+            <label for="">Select Tip %</label>
+            <div class="tip">
+                <div class="tips tip-5">5%</div>
+                <div class="tips tip-10">10%</div>
+                <div class="tips tip-15 active-tip">15%</div>
+                <div class="tips tip-25">25%</div>
+                <div class="tips tip-50">50%</div>
+                <div id="tip-custom">
+                    <input type="number" class="tip-custom" placeholder="CUSTOM">
+                </div>
+            </div>
+            <div class="peopleLabel">
+                <label for="">Number of People</label>
+                <label for="" class="error">Can't be zero</label>
+            </div>
+            <input type="number" class="input people-input">
+        </div>
+
+        <div class="result">
+            <div class="tip-amount">
+                <div class="text">
+                    <p>Tip Amount</p>
+                    <p class="person">/ person</p>
+                </div>
+                <div class="amount" id="tip-amount">$4.27</div>
+            </div>
+            <div class="total">
+                <div class="text">
+                        <p>Total</p>
+                        <p class="person">/ person</p>
+                </div>
+            <div class="amount" id="total-amount">$20.45</div>
+            </div>
+            <div class="reset">RESET</div>     
+        </div>
+        
+    </div>
+    <!-- End of tip calculator -->
+</body>
+</html> 
