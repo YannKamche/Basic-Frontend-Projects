@@ -106,7 +106,7 @@ input {
     background-color: var(--background-color-result);
     color: white;
     padding: 39px 21px;
-    border-radius: 12px;
+    border-radius: 15px;
 }
 
 /* Styles tip-amount and total container*/
@@ -200,5 +200,23 @@ input {
     .tips {
         height: 55px;
     }
-    /* Styles */
+    /* Styles the second container*/
+    .result {
+        margin-left: auto;
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+        padding: 48px 38px;
+    }
+    /* Styles the amount */
+    .amount {
+        font-size: 55px;
+    }
+    /* Styles the reset button */
+    .reset {
+        padding: 13px 0 13px 0;
+        margin-top: auto;
+    }
+
 }
