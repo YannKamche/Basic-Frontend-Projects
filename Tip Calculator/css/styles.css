@@ -48,7 +48,7 @@ label {
 
 /* Styles the input tag */
 input {
-    border: non;
+    border: none;
     outline: none; 
     padding: 5px;
     padding-right: 18px;
@@ -150,7 +150,55 @@ input {
     display: flex;
     justify-content: space-between;
 }
-/* styles the erro */
+/* styles the error */
 .error {
     color: red;
+}
+
+/* Media Queries */
+@media only screen and (min-width: 1000px) {
+    
+    /* Styles the body */
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    /* Styles the input tag */
+    input {
+        width: 415px;
+        padding: 2px;
+        background-position: 17px 18px;
+    }
+    /* Styles the calculator container */
+    .tip-calculator {
+        width: 999px;
+        flex-direction: row;
+        border-radius: 1.9rem;
+        padding: 2.5rem;
+        height: 479px;
+    }
+    /* Styles the first container in the calculator  */
+    .partOne {
+        margin-top: 1rem;
+        margin-left: 1.2rem;
+        display: flex;
+        flex-direction: column;
+    }
+    /* Styles the bill input */
+    .bill-input {
+        margin-bottom: 3.4rem;
+    }
+    /* Styles the tip container */
+    .tip {
+        grid-template-columns: 135px 135px 135px;
+        row-gap: 1.2em;
+        column-gap: 17px;
+        margin-bottom: 3.2rem;
+    }
+    /* Styles each tip */
+    .tips {
+        height: 55px;
+    }
+    /* Styles */
 }
