@@ -9,3 +9,4 @@ This repo contains a set of JavaScript projects you can work on to improve your 
 ## 5) Service Card
 ## 6) Glassmorphic Credit Card
 ## 7) Tip Calculator App
+## 8) Product Shoe Card
