@@ -64,7 +64,7 @@ input {
 
 /* Styles the bill input */
 .bill-input {
-    background-image: ;
+    background-image: url();
     margin-bottom: 36px;
 }
 /* Styles tip container*/
@@ -97,7 +97,7 @@ input {
 }
 /* Sets an image to the number of people input */
 .people-input {
-    background-image: ;
+    background-image: url('');
     margin-bottom: 2.4rem;
 }
 
